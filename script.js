@@ -423,8 +423,7 @@
         serviceModalImage.src = image;
         serviceModalImage.alt = title;
 
-        const encodedTitle = encodeURIComponent(title);
-        serviceModalWhatsApp.href = `https://wa.me/5521999999999?text=${encodeURIComponent(`Olá! Gostaria de agendar ${title}.`)}`;
+        serviceModalWhatsApp.href = `https://wa.me/5521964354763?text=${encodeURIComponent(`Olá! Gostaria de agendar ${title}.`)}`;
 
         servicesModal.classList.add('is-open');
         servicesModal.setAttribute('aria-hidden', 'false');
@@ -462,7 +461,7 @@
         const wppMsg = encodeURIComponent(
           `Olá! Vim pelo site da Duo B.\n\nNome: ${name}\nTelefone: ${phone}\nServiço: ${service}\n${message ? 'Mensagem: ' + message : ''}`
         );
-        window.open(`https://wa.me/5521999999999?text=${wppMsg}`, '_blank');
+        window.open(`https://wa.me/5521964354763?text=${wppMsg}`, '_blank');
         this.textContent = '✓ Redirecionando ao WhatsApp...';
         this.style.background = 'linear-gradient(135deg,#1da851,#25d366)';
         setTimeout(() => {
