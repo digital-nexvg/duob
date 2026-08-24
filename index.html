@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Duo B | Centro Estético</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="apple-touch-icon" href="images/favicon.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <meta name="theme-color" content="#2c1239" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <a href="#" class="nav-logo"><img src="images/logo.jpg" alt="DUOB" /></a>
+    <ul class="nav-links">
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#beneficios">Sobre</a></li>
+      <li><a href="#depoimentos">Depoimentos</a></li>
+      <li><a href="#contato">Contato</a></li>
+      <li><a href="https://wa.me/5521964354763?text=Olá!%20Gostaria%20de%20agendar%20um%20procedimento." target="_blank" class="nav-cta">Agendar ✦</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#hero" class="mobile-link">Início</a>
+    <a href="#premium-destaques" class="mobile-link">Foco da Clínica</a>
+    <a href="#servicos" class="mobile-link">Serviços</a>
+    <a href="#beneficios" class="mobile-link">Sobre</a>
+    <a href="#depoimentos" class="mobile-link">Depoimentos</a>
+    <a href="#outros-procedimentos" class="mobile-link">Outros Procedimentos</a>
+    <a href="#contato" class="mobile-link">Contato</a>
+    <a href="https://wa.me/5521964354763?text=Olá!%20Gostaria%20de%20agendar." target="_blank" class="mobile-link" style="color:var(--gold)">✦ Agendar pelo WhatsApp</a>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-text">
+      <span class="hero-eyebrow">Bem-vinda ao</span>
+      <h1 class="hero-title">
+        Sua beleza,<br><em>nosso cuidado</em>
+      </h1>
+      <p class="hero-sub">
+        Procedimentos estéticos premium com tecnologia de ponta e atendimento personalizado. Realce sua beleza natural com segurança e elegância.
+      </p>
+      <div class="hero-actions">
+        <a href="https://wa.me/5521964354763?text=Olá!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" class="btn-primary">
+          <span>💬</span> Agendar pelo WhatsApp
+        </a>
+        <a href="#servicos" class="btn-outline">Ver Serviços</a>
+      </div>
+    </div>
+
+   <div class="hero-visual">
+     <div class="hero-carousel">
+       <div class="hc-wrap">
+         <div class="hc-track" id="hcTrack">
+           <div class="hc-slide active">
+             <img src="images/frente.jpg" alt="Frente da clínica" />
+             <div class="hc-caption">
+               <span class="hc-caption-tag">Bem-estar & estética</span>
+               <p class="hc-caption-sub">
+                 Ambiente sofisticado, acolhedor e preparado para proporcionar conforto desde a sua chegada.
+               </p>
+             </div>
+           </div>
+
+           <div class="hc-slide">
+             <img src="images/proced.jpg" alt="Procedimento estético" />
+             <div class="hc-caption">
+               <span class="hc-caption-tag">Excelência profissional</span>
+               <p class="hc-caption-sub">
+                 Tecnologia, segurança e atendimento humanizado para realçar sua beleza natural.
+               </p>
+             </div>
+           </div>
+
+           <div class="hc-slide">
+             <img src="images/banhe.jpg" alt="Banheira relaxante" />
+             <div class="hc-caption">
+               <span class="hc-caption-tag">Momento de relaxamento</span>
+               <p class="hc-caption-sub">
+                 Um ambiente criado para aliviar o estresse e proporcionar uma experiência completa de relaxamento.
+               </p>
+             </div>
+           </div>
+         </div>
+       </div>
+
+       <div class="hc-controls">
+         <div class="hc-progress-bar">
+           <div class="hc-progress-fill" id="hcFill"></div>
+         </div>
+
+         <div class="hc-dots" id="hcDots"></div>
+
+         <div class="hc-arrows">
+           <button class="hc-arrow" id="hcPrev" aria-label="Anterior">
+             &#8592;
+           </button>
+
+           <button class="hc-arrow" id="hcNext" aria-label="Próximo">
+             &#8594;
+           </button>
+         </div>
+       </div>
+     </div>
+   </div>
+
+</section>
+
+  <!-- DESTAQUES PREMIUM -->
+  <section id="premium-destaques">
+    <div class="premium-shell reveal">
+      <div class="premium-head">
+        <span class="section-label">Especialidades da clínica</span>
+        <h2 class="section-title">Procedimentos em destaque</em></h2>
+        <p class="section-sub">Resultados visíveis, naturais e com protocolo personalizado.</p>
+      </div>
+
+      <div class="premium-carousel">
+        <div class="pc-track-wrap">
+          <div class="pc-track" id="pcTrack">
+            <article class="pc-slide active">
+              <img src="images/a1.jpg" alt="Aplicação de botox" />
+              <div class="pc-content">
+                <div class="pc-heading">
+                  <span class="pc-tag">01</span>
+                  <h3>Botox</h3>
+                </div>
+                <p>Suaviza rugas e linhas de expressão com naturalidade, preservando sua identidade e realçando uma aparência descansada.</p>
+                <a href="https://wa.me/5521964354763?text=Olá!%20Gostaria%20de%20agendar%20Botox." target="_blank" class="pc-cta">Quero agendar</a>
+              </div>
+            </article>
+
+            <article class="pc-slide">
+              <img src="images/a2.jpg" alt="Bioestimulador de colágeno" />
+              <div class="pc-content">
+                <div class="pc-heading">
+                  <span class="pc-tag">02</span>
+                  <h3>Bioestimulador de Colágeno</h3>
+                </div>
+                <p>Ativa a produção natural de colágeno para recuperar firmeza, textura e sustentação da pele de forma progressiva.</p>
+                <a href="https://wa.me/5521964354763?text=Olá!%20Gostaria%20de%20agendar%20Bioestimulador%20de%20Colágeno." target="_blank" class="pc-cta">Quero agendar</a>
+              </div>
+            </article>
+
+            <article class="pc-slide">
+              <img src="images/a3.jpg" alt="Tratamento pós-operatório" />
+              <div class="pc-content">
+                <div class="pc-heading">
+                  <span class="pc-tag">03</span>
+                  <h3>Pós-Operatório</h3>
+                </div>
+                <p>Protocolo especializado para reduzir inchaço, acelerar recuperação e oferecer mais conforto no seu processo de cicatrização.</p>
+                <a href="https://wa.me/5521964354763?text=Olá!%20Gostaria%20de%20agendar%20Pós-Operatório." target="_blank" class="pc-cta">Quero agendar</a>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="pc-controls">
+          <div class="pc-progress-bar">
+            <div class="pc-progress-fill" id="pcFill"></div>
+          </div>
+          <div class="pc-dots" id="pcDots"></div>
+          <div class="pc-arrows">
+            <button class="pc-arrow" id="pcPrev" aria-label="Slide anterior">&#8592;</button>
+            <button class="pc-arrow" id="pcNext" aria-label="Próximo slide">&#8594;</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVIÇOS -->
+  <section id="servicos">
+    <div class="section-header reveal">
+      <span class="section-label">O que oferecemos</span>
+      <h2 class="section-title">Nossos Tratamentos</h2>
+      <div class="divider" style="margin:1rem auto 1rem;"></div>
+      <p class="section-sub">Cada procedimento é realizado com produtos selecionados e técnicas avançadas para resultados que transformam.</p>
+    </div>
+    <div class="services-grid">
+      <article class="service-card reveal reveal-delay-1">
+        <img class="service-image" src="images/p1.jpg" alt="Preenchimento labial" />
+        <div class="service-body">
+          <h3>Preenchimento Labial</h3>
+          <button type="button" class="service-btn" data-title="Preenchimento Labial" data-image="images/p1.jpg" data-description="Realça os lábios com volume e contorno naturais, utilizando técnicas seguras e produtos de alta qualidade.">Ver mais</button>
+        </div>
+      </article>
+      <article class="service-card reveal reveal-delay-2">
+        <img class="service-image" src="images/p2.jpg" alt="Toxina botulínica" />
+        <div class="service-body">
+          <h3>Toxina Botulínica</h3>
+          <button type="button" class="service-btn" data-title="Toxina Botulínica" data-image="images/p2.jpg" data-description="Reduz rugas e linhas de expressão de forma segura e eficaz, proporcionando um aspecto natural e rejuvenescido.">Ver mais</button>
+        </div>
+      </article>
+      <article class="service-card reveal reveal-delay-3">
+        <img class="service-image" src="images/p3.jpg" alt="Bioestimulador de colágeno" />
+        <div class="service-body">
+          <h3>Bioestimulador de Colágeno</h3>
+          <button type="button" class="service-btn" data-title="Bioestimulador de Colágeno" data-image="images/p3.jpg" data-description="Estimula a produção natural de colágeno, melhorando a firmeza e elasticidade da pele.">Ver mais</button>
+        </div>
+      </article>
+      <article class="service-card reveal reveal-delay-4">
+        <img class="service-image" src="images/p4.jpg" alt="Harmonização facial" />
+        <div class="service-body">
+          <h3>Harmonização Facial</h3>
+          <button type="button" class="service-btn" data-title="Harmonização Facial" data-image="images/p4.jpg" data-description="Conjunto de procedimentos estéticos que equilibram e valorizam os traços do rosto, proporcionando harmonia e rejuvenescimento.">Ver mais</button>
+        </div>
+      </article>
+      <article class="service-card reveal reveal-delay-1">
+        <img class="service-image" src="images/p5.jpg" alt="Limpeza de pele profunda 3D com laser" />
+        <div class="service-body">
+          <h3>Limpeza de Pele Profunda 3D com Laser</h3>
+          <button type="button" class="service-btn" data-title="Limpeza de Pele Profunda 3D com Laser" data-image="images/p5.jpg" data-description="Tratamento avançado que combina limpeza profunda, esfoliação e laser para renovar a pele, combater acne e estimular a produção de colágeno.">Ver mais</button>
+        </div>
+      </article>
+      <article class="service-card reveal reveal-delay-2">
+        <img class="service-image" src="images/p6.jpg" alt="Preenchimento bigode chinês" />
+        <div class="service-body">
+          <h3>Preenchimento Bigode Chinês</h3>
+          <button type="button" class="service-btn" data-title="Preenchimento Bigode Chinês" data-image="images/p6.jpg" data-description="Procedimento estético que suaviza sulcos nasolabiais, proporcionando um contorno facial mais jovem e harmonioso.">Ver mais</button>
+        </div>
+      </article>
+      <article class="service-card reveal reveal-delay-1">
+        <img class="service-image" src="images/p7.jpg" alt="Tratamento de carboxterapia em estrias" />
+        <div class="service-body">
+          <h3>Tratamento de Carboxterapia em Estrias</h3>
+          <button type="button" class="service-btn" data-title="Tratamento de Carboxterapia em Estrias" data-image="images/p7.jpg" data-description="Procedimento que utiliza injeções de CO2 para melhorar a aparência das estrias, estimulando a produção de colágeno e a regeneração da pele.">Ver mais</button>
+        </div>
+      </article>
+      <article class="service-card reveal reveal-delay-2">
+        <img class="service-image" src="images/p8.jpg" alt="Remoção de verrugas e sinais" />
+        <div class="service-body">
+          <h3>Remoção de Verrugas e Sinais</h3>
+          <button type="button" class="service-btn" data-title="Remoção de Verrugas e Sinais" data-image="images/p8.jpg" data-description="Procedimento dermatológico que remove verrugas, sinais e pequenas lesões cutâneas de forma segura e eficaz.">Ver mais</button>
+        </div>
+      </article>
+      <article class="service-card reveal reveal-delay-3">
+        <img class="service-image" src="images/p9.jpg" alt="Fios de PDO" />
+        <div class="service-body">
+          <h3>Fios de PDO</h3>
+          <button type="button" class="service-btn" data-title="Fios de PDO" data-image="images/p9.jpg" data-description="Procedimento estético que utiliza fios de polidioxanona para lifting facial, estimulando a produção de colágeno e melhorando a firmeza da pele.">Ver mais</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <div class="service-modal" id="serviceModal" aria-hidden="true">
+    <div class="service-modal-backdrop" data-close-modal></div>
+    <div class="service-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="serviceModalTitle">
+      <button type="button" class="service-modal-close" aria-label="Fechar modal" data-close-modal>×</button>
+      <img id="serviceModalImage" src="" alt="" />
+      <div class="service-modal-body">
+        <h3 id="serviceModalTitle">Tratamento</h3>
+        <p id="serviceModalDescription"></p>
+        <a href="https://wa.me/5521964354763?text=Olá!%20Gostaria%20de%20agendar%20um%20tratamento%20de%20" id="serviceModalWhatsApp" class="service-modal-btn" target="_blank" rel="noopener noreferrer">Agendar no WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- BENEFÍCIOS -->
+  <section id="beneficios">
+    <div class="beneficios-visual reveal">
+      <div class="beneficios-circle">
+        <div class="beneficios-circle-inner">
+          <p>Por que</p>
+          <h3>Nos Escolher</h3>
+        </div>
+      </div>
+    </div>
+    <div class="beneficios-content">
+      <span class="section-label reveal">Nossos diferenciais</span>
+      <h2 class="section-title reveal">Beleza com cuidado<br><em>e excelência</em></h2>
+      <div class="divider reveal"></div>
+      <ul class="beneficios-list">
+        <li class="beneficio-item reveal reveal-delay-1">
+          <div class="beneficio-check">✓</div>
+          <div class="beneficio-text">
+            <h4>Profissionais Certificadas</h4>
+            <p>Equipe com formação técnica especializada e atualização constante nas melhores técnicas do mercado.</p>
+          </div>
+        </li>
+        <li class="beneficio-item reveal reveal-delay-2">
+          <div class="beneficio-check">✓</div>
+          <div class="beneficio-text">
+            <h4>Produtos Premium</h4>
+            <p>Utilizamos apenas marcas certificadas pela Anvisa, garantindo segurança e resultados superiores.</p>
+          </div>
+        </li>
+        <li class="beneficio-item reveal reveal-delay-3">
+          <div class="beneficio-check">✓</div>
+          <div class="beneficio-text">
+            <h4>Atendimento Personalizado</h4>
+            <p>Cada cliente recebe uma avaliação exclusiva com protocolo desenvolvido especialmente para seu perfil.</p>
+          </div>
+        </li>
+        <li class="beneficio-item reveal reveal-delay-4">
+          <div class="beneficio-check">✓</div>
+          <div class="beneficio-text">
+            <h4>Ambiente Acolhedor</h4>
+            <p>Espaço projetado para seu conforto e relaxamento, tornando cada visita uma experiência única.</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section id="depoimentos">
+    <div class="section-header reveal">
+      <span class="section-label">Clientes felizes</span>
+      <h2 class="section-title">O que dizem sobre nós</h2>
+      <div class="divider" style="margin:1rem auto;"></div>
+    </div>
+
+    <div class="depo-carousel reveal">
+      <div class="depo-track-wrap">
+        <div class="depo-track" id="depoTrack">
+          <article class="depo-slide active">
+            <div class="depo-quote-mark">“</div>
+            <div class="depo-stars">★★★★★</div>
+            <p class="depo-text">"Simplesmente maravilhosa! Fiz a limpeza de pele e saí de lá com a pele completamente renovada. O atendimento é impecável e o espaço é lindo demais."</p>
+            <div class="depo-author">
+              <div class="depo-avatar">A</div>
+              <div class="depo-info">
+                <span>Ana Paula S.</span>
+                <span>Limpeza de Pele</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="depo-slide">
+            <div class="depo-quote-mark">“</div>
+            <div class="depo-stars">★★★★★</div>
+            <p class="depo-text">"Fiz o design de sobrancelhas e a diferença foi incrível! A profissional entendeu exatamente o que eu queria e o resultado ficou natural e perfeito."</p>
+            <div class="depo-author">
+              <div class="depo-avatar">C</div>
+              <div class="depo-info">
+                <span>Carla M.</span>
+                <span>Design de Sobrancelhas</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="depo-slide">
+            <div class="depo-quote-mark">“</div>
+            <div class="depo-stars">★★★★★</div>
+            <p class="depo-text">"A drenagem linfática foi transformadora! Depois de três sessões, o inchaço sumiu e me sinto muito mais leve. Recomendo de olhos fechados a todas!"</p>
+            <div class="depo-author">
+              <div class="depo-avatar">F</div>
+              <div class="depo-info">
+                <span>Fernanda L.</span>
+                <span>Drenagem Linfática</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="depo-slide">
+            <div class="depo-quote-mark">“</div>
+            <div class="depo-stars">★★★★★</div>
+            <p class="depo-text">"Atendimento acolhedor, ambiente sofisticado e resultados muito bons. Senti que fui cuidada com atenção e isso faz toda a diferença na minha autoestima."</p>
+            <div class="depo-author">
+              <div class="depo-avatar">L</div>
+              <div class="depo-info">
+                <span>Larissa N.</span>
+                <span>Micropigmentação</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="depo-controls">
+        <div class="depo-progress-bar">
+          <div class="depo-progress-fill" id="depoProgress"></div>
+        </div>
+
+        <div class="depo-dots" id="depoDots"></div>
+
+        <div class="depo-arrows">
+          <button class="depo-arrow" id="depoPrev" aria-label="Depoimento anterior">&#8592;</button>
+          <button class="depo-arrow" id="depoNext" aria-label="Próximo depoimento">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUTROS PROCEDIMENTOS -->
+  <section id="outros-procedimentos">
+    <div class="section-header reveal">
+      <span class="section-label">Também oferecemos</span>
+      <h2 class="section-title">Outros Procedimentos</h2>
+      <div class="divider" style="margin:1rem auto 1rem;"></div>
+    
+    </div>
+
+    <ul class="outros-grid">
+      <li class="outro-item reveal reveal-delay-1">Botox hiperidrose (suor excessivo)</li>
+      <li class="outro-item reveal reveal-delay-2">Pós-operatório facial e corporal</li>
+      <li class="outro-item reveal reveal-delay-3">Limpeza de pele profunda</li>
+      <li class="outro-item reveal reveal-delay-4">Drenagem linfática</li>
+      <li class="outro-item reveal reveal-delay-1">Massagem modeladora</li>
+      <li class="outro-item reveal reveal-delay-2">Tratamento de celulite e flacidez</li>
+      <li class="outro-item reveal reveal-delay-3">Tratamento de gordura localizada</li>
+      <li class="outro-item reveal reveal-delay-4">Tratamento de lipedema</li>
+    </ul>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato">
+    <div class="contato-info">
+      <span class="section-label reveal">Fale conosco</span>
+      <h2 class="section-title reveal">Agende sua<br><em>consulta</em></h2>
+      <div class="divider reveal"></div>
+      <p class="section-sub reveal">Estamos prontas para receber você! Entre em contato pelo formulário, pelo WhatsApp ou venha nos visitar.</p>
+      <div class="info-item reveal reveal-delay-1">
+        <div class="info-icon">📍</div>
+        <div class="info-text">
+          <span>Endereço</span>
+          <span>Rua Professor Alfredo <br>Gonçalves Filgueiras, 496 — Nilópolis, RJ</span>
+        </div>
+      </div>
+      
+      <div class="info-item reveal reveal-delay-3">
+        <div class="info-icon">🕐</div>
+        <div class="info-text">
+          <span>Horário</span>
+          <span>Seg–Sex: 9h às 18h · Sáb: 9h às 12h</span>
+        </div>
+      </div>
+      <div class="wpp-section reveal reveal-delay-4">
+        <p>Prefere falar direto por mensagem?</p>
+        <a href="https://wa.me/5521964354763?text=Olá!%20Gostaria%20de%20saber%20mais%20sobre%20os%20serviços%20da%20Duo%20B." target="_blank" class="btn-wpp">
+          <span>💬</span> Chamar no WhatsApp
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+       <a href="#" class="nav-logo"><img src="images/logo.jpg" alt="DUOB" /></a>
+        <p style="margin-top:.8rem">Cuidado estético com excelência, produtos premium e atendimento personalizado. Realçando sua beleza desde 2020.</p>
+       
+      </div>
+      
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Duo B Centro Estético. Todos os direitos reservados.</p>
+      <p>Desenvolvido por <a href="https://nexvg.com.br" target="_blank"><img src="images/nexvg.jpg" class="logonex" alt="NEXVG" /></a></p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+   <a class="whatsapp-float" href="https://wa.me/5521964354763?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20a%20Duo%20B." target="_blank" aria-label="WhatsApp">
+    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16 .5C7.44.5.5 7.44.5 16c0 2.76.71 5.35 1.95 7.6L.5 31.5l8.18-1.93A15.44 15.44 0 0016 31.5C24.56 31.5 31.5 24.56 31.5 16S24.56.5 16 .5zm0 28.3a13.24 13.24 0 01-6.74-1.84l-.48-.29-5.01 1.18 1.2-4.87-.31-.5A13.25 13.25 0 1116 28.8zm7.27-9.93c-.4-.2-2.35-1.16-2.71-1.29-.36-.14-.63-.2-.89.2-.26.39-1.02 1.29-1.25 1.56-.23.27-.46.3-.86.1-.4-.2-1.68-.62-3.2-1.98-1.18-1.05-1.98-2.35-2.21-2.74-.23-.4-.02-.61.17-.81.18-.18.4-.46.6-.7.2-.22.26-.39.4-.65.13-.26.07-.49-.03-.69-.1-.2-.9-2.16-1.23-2.96-.32-.78-.65-.67-.89-.68l-.75-.01c-.26 0-.69.1-1.05.49-.36.4-1.38 1.35-1.38 3.3s1.41 3.83 1.61 4.09c.2.26 2.78 4.24 6.73 5.95.94.41 1.67.65 2.24.83.94.3 1.8.26 2.47.16.75-.11 2.35-.96 2.68-1.89.33-.92.33-1.71.23-1.88-.1-.16-.36-.26-.76-.46z"/>
+    </svg>
+  </a>
+  <script src="script.js"></script>
+</body>
+</html>

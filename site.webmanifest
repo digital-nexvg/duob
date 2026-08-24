@@ -1,0 +1,16 @@
+{
+  "name": "Duo B Centro Estetico",
+  "short_name": "Duo B",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#efe8f3",
+  "theme_color": "#2c1239",
+  "icons": [
+    {
+      "src": "images/favicon.ico",
+      "sizes": "16x16 32x32 48x48",
+      "type": "image/x-icon"
+    }
+  ]
+}
