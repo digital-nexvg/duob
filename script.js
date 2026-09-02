@@ -406,6 +406,7 @@
     function closeServiceModal() {
       if (!servicesModal) return;
       servicesModal.classList.remove('is-open');
+      servicesModal.classList.remove('p1-modal');
       servicesModal.setAttribute('aria-hidden', 'true');
       document.body.classList.remove('modal-open');
     }
@@ -422,6 +423,7 @@
         serviceModalDescription.textContent = description;
         serviceModalImage.src = image;
         serviceModalImage.alt = title;
+        servicesModal.classList.toggle('p1-modal', image === 'images/p1.jpg');
 
         serviceModalWhatsApp.href = `https://wa.me/5521964354763?text=${encodeURIComponent(`Olá! Gostaria de agendar ${title}.`)}`;
 

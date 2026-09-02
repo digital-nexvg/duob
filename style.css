@@ -977,6 +977,13 @@
       display: block;
       background: #eae0f6;
     }
+    .service-modal.p1-modal .service-modal-dialog {
+      max-height: calc(100vh - 3rem);
+      overflow-y: auto;
+    }
+    .service-modal.p1-modal img {
+      height: min(320px, 42vh);
+    }
     .service-modal-body {
       padding: 1.5rem 1.4rem 1.8rem;
     }
